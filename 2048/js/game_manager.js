@@ -291,7 +291,7 @@ GameManager.prototype.addUnRandomTile = function () {
     }else if(cell.y + 1 < this.grid.size && !this.grid.cellOccupied({x:cell.x, y:(cell.y + 1)})){
       newCell = {x:cell.x, y:cell.y+1};
     }else{
-      this.addRandomTile();
+      this.addUnRandomTile();
       return;
     }
     
